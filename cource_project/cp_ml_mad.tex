@@ -1,0 +1,37 @@
+\newpage
+\section{Models, Algorithms and Datasets}\label{sec:mad}
+
+This research compares the following 5 classification methods:
+\begin{enumerate}
+    \item Support Vector Machine.
+    \item Naive Bayes.
+    \item Random Forests.
+    \item K-Nearest Neighbor.
+    \item Decision Tree.
+\end{enumerate}
+
+The methods presented above will classify fake news by the following three datasets:
+\begin{enumerate}
+    \item First dataset: 17903 fake news and 20826 true ones.
+    This dataset does not require preprocessing.
+    \item Second dataset: 2137 fake news and 1872 true ones.
+    This dataset also does not require preprocessing.
+    \item Third dataset: 10387 fake news and 10413 true ones.
+    In this dataset, you need to delete empty rows and duplicates.
+\end{enumerate}
+
+Classifiers are evaluated by the following metrics:
+\begin{enumerate}
+    \item Accuracy is a parameter that can be used to determine the number of correctly classified forecasts and is expressed as:
+    \[\text{Accuracy} =  \frac{\text{Number of correct predictions}}{\text{Total number of predictions}}\].
+    This can be further developed by using the results of a confusion matrix that includes TP, TN, FP, which FN, and is defined as follows:
+    \[\text{Accuracy} =  \frac{TP + TN}{TP + TN + FP + FN}\].
+    \item The F1 score is a number between 0 and 1 that represents the weighted average of precision and recall.
+    F1 score is a better efficiency measure than accuracy, and it is defined:
+    \[F1_{score} = \frac{2 \cdot (recall \cdot precision)}{recall + precision}\].
+    \item The likelihood of the desired result is used to calculate the success of a model using log loss.
+    The higher the log deficit, the higher the chance of the real class.
+    The lower the ranking, the more the model has done.
+    When the number of potential classes $(M) = 2$, the log loss can be expressed as follows:
+    \[-(y_{i}\log(p_{i}) + (1 - y_{i}))\log(1 - p_{i})\].
+\end{enumerate}

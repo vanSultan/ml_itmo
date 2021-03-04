@@ -13,7 +13,7 @@ ITMO Machine Learning (2021)
 
 ---
 
-Topic of the course project: _-_. 
+Topic of the course project: _Identification of fake news with machine learning_. 
 
 ---
 
