@@ -1,0 +1,54 @@
+\newpage
+\section{Experimental research}\label{sec:experiment}
+
+The estimated metrics were calculated for each method relative to the three data sets.
+The initial data were divided into training and test samples, 75\% and 25\%, respectively.
+
+The results of the measurements are shown in the following tables~\ref{tbl:ds_1}-~\ref{tbl:ds_3}:
+
+\begin{table}[ht]
+\centering
+\caption{Results of evaluation of classification methods for the first dataset}
+\begin{tabular}{l|ccc|}
+\cline{2-4}
+                                     & \multicolumn{1}{c|}{accuracy} & \multicolumn{1}{c|}{f1} & log\_loss \\ \hline
+\multicolumn{1}{|l|}{SVM}            & 0.92                          & 0.91                    & 0.15      \\ \hline
+\multicolumn{1}{|l|}{Naive Bayes}    & 0.89                          & 0.85                    & 2.16      \\ \hline
+\multicolumn{1}{|l|}{Random Forests} & 0.92                          & 0.90                    & 0.13      \\ \hline
+\multicolumn{1}{|l|}{KNN}            & 0.87                          & 0.89                    & 0.54      \\ \hline
+\multicolumn{1}{|l|}{Decision Tree}  & 0.91                          & 0.88                    & 5.68      \\ \hline
+\end{tabular}
+\label{tbl:ds_1}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Results of evaluation of classification methods for the second dataset}
+\begin{tabular}{l|ccc|}
+\cline{2-4}
+                                     & \multicolumn{1}{c|}{accuracy} & \multicolumn{1}{c|}{f1} & log\_loss \\ \hline
+\multicolumn{1}{|l|}{SVM}            & 0.89                          & 0.93                    & 0.27      \\ \hline
+\multicolumn{1}{|l|}{Naive Bayes}    & 0.89                          & 0.93                    & 3.57      \\ \hline
+\multicolumn{1}{|l|}{Random Forests} & 1.0                           & 1.0                     & 0.059     \\ \hline
+\multicolumn{1}{|l|}{KNN}            & 0.86                          & 0.91                    & 0.19      \\ \hline
+\multicolumn{1}{|l|}{Decision Tree}  & 1.0                           & 1.0                     & 9.99      \\ \hline
+\end{tabular}
+\label{tbl:ds_2}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Results of evaluation of classification methods for the third dataset}
+\begin{tabular}{l|ccc|}
+\cline{2-4}
+                                     & \multicolumn{1}{c|}{accuracy} & \multicolumn{1}{c|}{f1} & log\_loss \\ \hline
+\multicolumn{1}{|l|}{SVM}            & 0.73                          & 0.71                    & 0.34      \\ \hline
+\multicolumn{1}{|l|}{Naive Bayes}    & 0.69                          & 0.65                    & 4.08      \\ \hline
+\multicolumn{1}{|l|}{Random Forests} & 0.89                          & 0.88                    & 0.17      \\ \hline
+\multicolumn{1}{|l|}{KNN}            & 0.75                          & 0.73                    & 0.43      \\ \hline
+\multicolumn{1}{|l|}{Decision Tree}  & 0.87                          & 0.87                    & 7.58      \\ \hline
+\end{tabular}
+\label{tbl:ds_3}
+\end{table}
+
+On the presented datasets, methods with trees show better results than other methods considered.

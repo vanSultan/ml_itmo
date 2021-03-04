@@ -1,0 +1,52 @@
+% настойка языка и шрифта
+\documentclass[12pt]{article}
+
+\usepackage{cmap}
+%\usepackage[russian]{babel}
+\usepackage[english]{babel}
+
+% настройка страниц
+\usepackage[left=3cm, right=1.5cm, top=2cm, bottom =2cm]{geometry}
+\geometry{a4paper}
+
+% дополнительные пакеты
+\usepackage{array}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{indentfirst}
+\usepackage{textalpha}
+\usepackage{mathtext}
+\usepackage{listings}
+\usepackage[pdftex]{graphicx}
+\usepackage{csquotes}
+\usepackage{latexsym}
+\graphicspath{{pics/}} %путь к рисункам
+
+%переносы в таблицах
+\newcommand{\specialcell}[2][c]{%
+	\begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}
+
+\usepackage[
+bookmarks=true, colorlinks=true, unicode=true,
+urlcolor=black,linkcolor=black, anchorcolor=black,
+citecolor=black, menucolor=black, filecolor=black,
+]{hyperref}
+
+\usepackage{enumerate} %списки
+\lstset{frame=single}
+
+\addto\captionsrussian{\def\refname{}} %заголовок библиографии
+\addto\captionsenglish{\renewcommand\contentsname{TABLE OF CONTENTS}}
+
+\begin{document}
+\def\figurename{Figure} % префикс к рисунками
+\def\tablename{Table}
+\input{cp_ml_title}
+\tableofcontents
+\input{cp_ml_intro}
+\input{cp_ml_lit_rev}
+\input{cp_ml_mad}
+\input{cp_ml_experiments.tex}
+\input{cp_ml_conclusion.tex}
+\include{cp_ml_biblio}
+\end{document}
